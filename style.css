@@ -215,7 +215,7 @@ body {
 .section-title-heading.todo {
   width: 260px;
 }
-.section-title-heading.hotel {
+.section-title-heading.hotel-heading {
   width: 320px;
 }
 /* About section */
@@ -277,7 +277,7 @@ body {
   transform: scale(1.05);
   transition: all 100ms ease-in-out;
 }
-
+/* knapp effekter */
 #party-button:active > .party-button-confetti {
   visibility: visible;
   display: block;
@@ -308,6 +308,7 @@ body {
   transform-origin: left;
   animation: traveling 1.5s infinite ease-out;
 }
+/* koffert animasjon */
 @keyframes traveling {
   from {
     transform: scaleX(1);
@@ -417,4 +418,124 @@ body {
 }
 .no-wrap {
   text-wrap: nowrap;
+}
+
+/* Emil */
+/* Overskrift til siden */
+.hotel-page-header {
+  background-color: #000;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* Hjemknapp stil */
+.home-button {
+  position: absolute;
+  left: 10px;
+}
+/* Overskrift for hotellbooking */
+.hotel-booking-header {
+  text-align: center;
+}
+/* Hotell-container styling */
+.hotel-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+/* Hotellkort styling */
+.hotel {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  gap: 0.5rem;
+}
+/* Bilde i hotellkort */
+.hotel-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* bookingknapp på hotelkortene med hover effekt */
+.book-button {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.book-button:hover {
+  background-color: #1a1a1a;
+}
+/* Navigasjonsmeny */
+.hotels-navbar {
+  background-color: #1a1a1a;
+  padding: 1em;
+}
+/* Navigasjonslenker */
+.hotels-navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin: 0 1em;
+}
+/* Container for hjemmesiden */
+.home-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Teksboks høyre side */
+.right-side {
+  background: linear-gradient(#873bf870, #9557f190);
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  margin: 10%;
+}
+/* kort venstre side */
+.left-side {
+  display: flex;
+  flex-direction: column;
+}
+/* Boks for tekstinnhold */
+.content-box {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+/* Styler innholdsboksen for tekst */
+.box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+/* Styler bildet i tekstboksen */
+.box-image {
+  width: 300px;
+  height: 200px;
+  border-radius: 0.5rem;
+  margin-bottom: 15px;
 }
