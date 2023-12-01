@@ -18,19 +18,30 @@
                 </a>
             </div>
             <nav>
+                <!-- Navbar -->
                 <ul class="nav-container">
                     <li class="nav-link " id="hotel-link">
                         <h2><a href="pages/hotel.html">Hotel & Casino</a></h2>
+                        <!-- Alt under vises ved Hover effekt på "Hotel&Casino" knappen -->
                         <div class="hotel-dropdown-menu">
                             <div class="hotel-dropdown-container">
-                                <div class="dropdown-card"><img src="img/oasis-at-gold-spike.jpg" alt="">
-                                    <h3>Cheap</h3>
+                                <div class="dropdown-card">
+                                    <a href="/pages/hotel.html">
+                                        <img src="img/oasis-at-gold-spike.jpg" alt="">
+                                        <h3>Cheap</h3>
+                                    </a>
                                 </div>
-                                <div class="dropdown-card"><img src="img/park-mgm-las-vegas.jpg" alt="">
-                                    <h3>Economy</h3>
+                                <div class="dropdown-card">
+                                    <a href="/pages/hotel.html">
+                                        <img src="img/park-mgm-las-vegas.jpg" alt="">
+                                        <h3>Economy</h3>
+                                    </a>
                                 </div>
-                                <div class="dropdown-card"><img src="img/belliago.jpeg" alt="">
-                                    <h3>Luxury</h3>
+                                <div class="dropdown-card">
+                                    <a href="/pages/hotel.html">
+                                        <img src="img/belliago.jpeg" alt="">
+                                        <h3>Luxury</h3>
+                                    </a>
                                 </div>
                                 <div class="dropdown-card">
                                     <p class="card-text">Vegas Strip hotels redefine luxury with lavish suites, top-tier
@@ -38,26 +49,25 @@
                                         and indulgent spas—each a unique escape in the city of lights.</p>
                                 </div>
                             </div>
-                    </li>
-
-                    <li class="nav-link">
-                        <h2><a href="#">Play Slots</a></h2>
+                        </div>
+                        <!-- dropdown slutter her -->
                     </li>
                     <li class="nav-link">
                         <h2><a href="#">Things to do</a></h2>
                     </li>
                 </ul>
-
             </nav>
             <div class="burger-container">
-                <h2>|||</h2>
+                <h2 class="burger-button">|||</h2>
             </div>
+            <!-- Slutt Navbar -->
         </div>
     </header>
-    <section class="bg-image">
-    </section>
+    <!-- BG Image, image set in css -->
+    <section class="bg-image"></section>
     <!-- Heading Main Row slutter -->
     <main>
+        <!-- About Section -->
         <div class="section-title">
             <h1 class="section-title-heading">About</h1>
         </div>
@@ -79,6 +89,7 @@
                 </p>
             </div>
         </section>
+        <!-- Slutt About Section -->
         <!-- Image Collage -->
         <div class="section-title right">
             <h1 class="section-title-heading">Gallery</h1>
@@ -96,54 +107,61 @@
             </div>
 
         </section>
-        <!-- End Image Collage -->
+        <!-- Slutt Image Collage -->
         <!-- Todo Section -->
         <div class="section-title">
             <h1 class="section-title-heading todo">Things to Do</h1>
         </div>
         <section class="todo-section">
-            <div class="todo-box"><img src="img/holiday-svgrepo-com.svg" alt="">
-                <a href="">
-                    <h5>Party</h5>
-                </a>
+            <div class="todo-box" id="party-button">
+                <img src="img/holiday-svgrepo-com.svg" alt="">
+                <h5>Party</h5>
+                <div class="party-button-confetti">
+                    <img src="img/6ob.gif" alt="">
+                </div>
             </div>
-            <div class="todo-box"><img src="img/dice-6-svgrepo-com.svg" alt="">
-                <a href="">
-                    <h5>Gamble</h5>
-                </a>
+            <div class="todo-box" id="dice-button">
+                <img id="dice-icon" src="img/dice-6-svgrepo-com.svg" alt="">
+                <h5>Gamble</h5>
             </div>
-            <div class="todo-box"><img src="img/travel-svgrepo-com.svg" alt="">
-                <a href="">
-                    <h5>Travel</h5>
-                </a>
+            <div class="todo-box" id="travel-button">
+                <div class="travel-button-effect"></div>
+                <img src="img/travel-svgrepo-com.svg" alt="">
+                <h5>Travel</h5>
             </div>
         </section>
-        <!-- Hotels -->
+        <!-- Slutt Todo Section -->
+        <!-- Hotels Section-->
         <div class="section-title right">
             <h1 class="section-title-heading hotel">Hotel & Casino</h1>
         </div>
         <section class="hotel-section">
+            <!-- Knapper for å gå venstre/høyre -->
+            <!-- Høyre -->
             <div class="image-container-button">
-                <a href="#">
+                <a href="#hotel-card-first">
                     <h1> ➜</h1>
                 </a>
             </div>
+            <!-- Venstre -->
             <div class="image-container-button right">
-                <a href="#">
+                <a href="#hotel-card-last">
                     <h1> ➜</h1>
                 </a>
             </div>
+            <!-- Slutt knapper -->
+
             <div class="hotel-section-image-container">
 
                 <div class="hotel-card">
-                    <div class="hotel-card-image">
+                    <div id="hotel-card-first" class="hotel-card-image">
                         <img src="img/plaza_casino.jpeg" alt="">
                     </div>
                     <div class="hotel-card-title">
                         <h1>Plaza Hotel</h1>
                     </div>
                     <div class="hotel-card-desc">
-                        <p>Very good 5 Star</p>
+                        <p>Downtown elegance at the iconic Plaza</p>
                     </div>
                 </div>
                 <div class="hotel-card">
@@ -169,7 +187,7 @@
                     </div>
                 </div>
                 <div class="hotel-card">
-                    <div class="hotel-card-image">
+                    <div id="hotel-card-last" class="hotel-card-image">
                         <img src="img/plaza_casino.jpeg" alt="">
                     </div>
                     <div class="hotel-card-title">
@@ -198,10 +216,12 @@
                     Entertainment Capital of the World illuminate your journey!</p>
             </div>
             <div class="footer-contact">
+                <!-- Footer Image -->
                 <div class="footer-contact-logo">
                     <img src="img/citylogo.png" alt="">
                     <h3 class="no-wrap">EXPLORE LAS VEGAS</h3>
                 </div>
+                <!-- Socials -->
                 <div class="footer-contact-info">
                     <div>
                         <p>Connect with us:</p>
